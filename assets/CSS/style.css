@@ -3,11 +3,20 @@
 
 
 /* Ligne d'article */
-.article h3 {
+.article h3{
     text-align: center;
 }
-.article h2 {
+.article h3 a {
+    color: #a60505;
+}
+.article h2 a {
     text-align: center;
+    color: #313131;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.article h2 a::hover {
+    color: #8c8c8c;
 }
 .article h4 {
     text-align: center;
