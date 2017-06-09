@@ -43,3 +43,17 @@
 .pagination-style a {
     color: #8c8c8c;
 }
+
+/* Séparation*/
+.separation {
+    height: 1px;
+    background-color: #8c8c8c;
+    margin: 5px 0px 5px 0px ;
+}
+
+.separation-about {
+    height: 3px;
+    border-top: solid 1px #a60505;
+    border-bottom: solid 1px #a60505;
+    width: 100%;
+}
