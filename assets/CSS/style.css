@@ -5,24 +5,41 @@
 /* Ligne d'article */
 .article h3{
     text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 .article h3 a {
     color: #a60505;
+}
+.article h2 {
+    text-align: center;
 }
 .article h2 a {
     text-align: center;
     color: #313131;
     letter-spacing: 1px;
     text-transform: uppercase;
+
 }
-.article h2 a::hover {
+.article h2 a:hover {
     color: #8c8c8c;
+    text-decoration: none;
 }
 .article h4 {
     text-align: center;
+    color: #8c8c8c;
+
 }
 
-.img-article {
-height: 570px;
-    width: 370px;
+.article span {
+    font-style: italic;
+}
+.article span a {
+    color: black;
+}
+
+/* Pagination */
+
+.pagination-style a {
+    color: #8c8c8c;
 }
