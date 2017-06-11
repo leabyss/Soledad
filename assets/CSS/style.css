@@ -243,22 +243,40 @@ header img {
 
 /* Pagination */
 
-.pagination-style a {
+.pagination ul li a {
     color: #8c8c8c;
 }
-
+/* About */
+.about h2 {
+    text-transform: uppercase;
+    font-family: "PlayfairDisplay";
+    font-size: 16px;
+}
+.about h3 {
+    font-family: "PlayfairDisplay";
+    font-size: 16px;
+}
+.about p {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
 /* Séparation*/
 .separation {
     height: 1px;
     background-color: #8c8c8c;
     margin: 5px 0px 5px 0px ;
+    margin-bottom: 20px;
+
 }
 
 .separation-about {
-    height: 3px;
+    height: 5px;
     border-top: solid 1px #a60505;
     border-bottom: solid 1px #a60505;
     width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
