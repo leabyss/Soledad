@@ -3,7 +3,24 @@
 
 @font-face {
     font-family: "FontAwesome";
-    src: url("../assets/fonts/FontAwesome.otf");
+    src: url("../fonts/FontAwesome.otf");
+    src: url("../fonts/FontAwesome.ttf");
+}
+@font-face {
+    font-family: "PT Serif";
+    src: url("../fonts/PT_Serif-Web-Regular.ttf");
+}
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
 }
 
 /* ----------------------- Navbar ----------------------- */
@@ -11,10 +28,14 @@ nav {
     width: 100%;
     height: 60px;
     background-color: #212121;
+    position: fixed;
+    z-index: 20;
+    margin-top: -68px;
 }
 
 #navigation {
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -37,11 +58,14 @@ nav {
 }
 
 .nav_item {
-    margin: 20px 3% 20px 0%;
+    margin: 20px 8% 20px -4%;
+    font-family: "PlayfairDisplay";
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .nav_search {
-    margin: 20px 0% 20px 15%;
+    margin: 20px 0% 20px 8%;
     font-size: 16px;
 }
 
@@ -50,19 +74,22 @@ nav {
 #site_title {
     width: 100%;
     text-align: center;
-    margin: 73px 0px; /*228px de hauteur entre la navbar et l'image*/
+    margin: 68px 0px; /*228px de hauteur entre la navbar et l'image*/
 }
 
-#site_title > h1 {
-    font-size: 80px;
+#site_title img {
+    width: 431px;
+    margin-top: 45px;
 }
 
 #site_title > h2 {
     font-style: italic;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 14px;
-    font-family: serif;
+    font-family: 'PT Serif', serif;
     letter-spacing: 1px;
+    line-height: 1.5;
+    margin-top: 15px;
 }
 .site_slogan::before {
     display: inline-block;
@@ -84,6 +111,7 @@ nav {
     width: 100%;
     height: 560px;
     overflow: hidden;
+    margin-bottom: -150px;
 }
 
 header img {
@@ -96,7 +124,7 @@ header img {
     width: 480px;
     height: 158px;
     position: relative;
-    bottom: 350px;
+    bottom: 270px;
     margin: 0 auto;
     text-align: center;
     background-color: white;
@@ -106,8 +134,13 @@ header img {
 
 #featured_post h2 a {
     color: #313131;
+    font-family: "PlayfairDisplay";
+    font-size: 23px;
+    font-weight: 400;
     letter-spacing: 1px;
     text-decoration: none;
+    position: relative;
+    top: 33px;
 }
 
 #featured_post h3{
@@ -115,10 +148,21 @@ header img {
 }
 #featured_post h3 a {
     color: #a60505;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: 45px;
 }
 
 #featured_post h4 {
     color: #8c8c8c;
+    font-family: 'Raleway-Regular';
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    top: 30px;
 }
 #featured_post span {
     font-style: italic;
@@ -132,12 +176,18 @@ header img {
     width: 150px;
     height: 32px;
     position: relative;
-    bottom: 310px;
+    bottom: 230px;
     margin: 0 auto;
     text-align: center;
     color: white;
     background-color: #323232;
     padding-top: 6px;
+}
+.date_box p {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -149,25 +199,39 @@ header img {
 }
 .article h3 a {
     color: #a60505;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 .article h2 {
     text-align: center;
 }
 .article h2 a {
     text-align: center;
+    font-family: "PlayfairDisplay";
     color: #313131;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-weight: 400;
     text-transform: uppercase;
-
 }
 .article h2 a:hover {
     color: #8c8c8c;
     text-decoration: none;
+    transition: 0.5s;
 }
 .article h4 {
     text-align: center;
     color: #8c8c8c;
-
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.article p {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    line-height: 25px;
 }
 
 .article span {
@@ -201,14 +265,14 @@ header img {
 /* ----------------------- Footer ----------------------- */
 footer {
     width: 100%;
-    height: 500px;
+    height: 480px;
     background-color: #212121;
 }
 
 /*INSTAGRAM PICTURES*/
 #insta_pics {
     width: 100%;
-    height: 35%;
+    height: 33%;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -222,20 +286,24 @@ footer {
 
 #insta_box {
     position: relative;
-    bottom: 125px;
+    bottom: 110px;
     width: 170px;
     height: 50px;
     margin: 0 auto;
     background-color: white;
     text-align: center;
     padding-top: 15px;
+    font-family: "PlayfairDisplay";
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 /*SOCIAL_NAV*/
 #nav_social {
     width: 1170px;
     height: 98px;
-    margin: -60px auto 20px;
+    margin: -60px auto -40px;
     padding-top: 25px;
     padding-right: 20px;
     display: flex;
@@ -246,7 +314,7 @@ footer {
 }
 
 #nav_social li{
-    font-size: 16px;
+    font-size: 14px;
     padding: 4px 0;
     margin-right: 25px;
     height: 45%;
@@ -256,6 +324,8 @@ footer {
 #nav_social li a {
     color: #999999;
     text-decoration: none;
+    font-family: "PlayfairDisplay";
+    letter-spacing: 1px;
 }
 
 #nav_social li a:hover {
@@ -270,7 +340,7 @@ footer {
     border-radius: 100%;
     margin: 0 10px;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
 .nv_icon:hover {
@@ -283,12 +353,30 @@ footer {
 /*FOOTER_INFOS*/
 #credits {
     text-align: center;
-}
-
-#credits h1 {
-    color: white;
+    position: relative;
+    top: 80px;
 }
 
 #credits p {
     color: #999999;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+#back_to_top {
+    width: 100px;
+    margin: 20px auto;
+    font-family: "Raleway-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+#back_to_top a {
+    text-decoration: none;
+    color: #999999;
+}
+#back_to_top a:hover {
+    color: white;
+    transition: 0.5s;
 }
