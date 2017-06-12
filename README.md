@@ -10,6 +10,3 @@
 ## Romain Seite
 + Réalisation du Body
 + Réalisation du README
-
-## En commun
-+ Tentative de Javascripts
