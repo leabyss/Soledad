@@ -1,5 +1,4 @@
-/* Bon courage :) */
-/* Merci toi aussi */
+/*Romain Seite et Léa Hennebert*/
 
 @font-face {
     font-family: "FontAwesome";
@@ -74,7 +73,7 @@ nav {
 #site_title {
     width: 100%;
     text-align: center;
-    margin: 68px 0px; /*228px de hauteur entre la navbar et l'image*/
+    margin: 68px 0px;
 }
 
 #site_title img {
@@ -190,7 +189,7 @@ header img {
     font-weight: 500;
 }
 
-/*-----------------------------------------------------------------------------------------------------*/
+/* ----------------------- Body ----------------------- */
 /* Ligne d'article */
 .article h3{
     text-align: center;
@@ -332,7 +331,6 @@ header img {
     width: auto;
 }
 
-/*-----------------------------------------------------------------------------------------------------*/
 /* ----------------------- Footer ----------------------- */
 footer {
     width: 100%;
